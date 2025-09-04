@@ -1,4 +1,4 @@
-# east-grinstead-ac
+# egac_v1
 
 This is a Next.js application generated with
 [Create Fumadocs](https://github.com/fuma-nama/fumadocs).

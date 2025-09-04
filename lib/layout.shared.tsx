@@ -1,4 +1,3 @@
-import { HomeIcon } from 'lucide-react';
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
 
 /**
@@ -16,35 +15,16 @@ export function baseOptions(): BaseLayoutProps {
           <svg
             width="24"
             height="24"
-            viewBox="0 0 24 24"
-            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            aria-label="Logo"
           >
-            <rect width="24" height="24" rx="12" fill="currentColor" />
+            <circle cx={12} cy={12} r={12} fill="currentColor" />
           </svg>
-          East Grinstead AC
+          My App
         </>
       ),
     },
     // see https://fumadocs.dev/docs/ui/navigation/links
-    links: [
-      {
-        text: 'News',
-        url: '/news',
-      },
-      {
-        text: 'About',
-        url: '/about',
-      },
-      {
-        text: 'Club Records',
-        url: '/records',
-      },
-      {
-        text: 'Enquiries',
-        url: '/enquiries',
-      },
-    ],
+    links: [],
   };
 }
