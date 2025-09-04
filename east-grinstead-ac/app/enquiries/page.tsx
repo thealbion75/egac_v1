@@ -1,3 +1,4 @@
+import { buttonVariants } from 'fumadocs-ui/components/button';
 import {
   DocsBody,
   DocsDescription,
@@ -53,7 +54,13 @@ export default function Page() {
             <span>Your message:</span>
             <textarea name="message" className="rounded-md border p-2"></textarea>
           </label>
-          <button type="submit" className="rounded-md bg-blue-500 p-2 text-white">
+          <button
+            type="submit"
+            className={buttonVariants({
+              color: 'primary',
+              className: 'self-start',
+            })}
+          >
             Send
           </button>
         </form>

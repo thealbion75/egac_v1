@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/neutral.css';
+@import 'fumadocs-ui/css/preset.css';
+
+:root {
+  --color-primary: 212 82% 40%;
+  --color-secondary: 49 84% 51%;
+
+  --color-fd-background: 0 0% 100%;
+}
+
+.dark {
+  --color-fd-background: 0 0% 10%;
+}

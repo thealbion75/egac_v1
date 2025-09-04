@@ -1,4 +1,4 @@
-import { pageSource } from '@/lib/source';
+import { aboutSource } from '@/lib/source';
 import {
   DocsBody,
   DocsDescription,
@@ -10,7 +10,7 @@ import { getMDXComponents } from '@/mdx-components';
 import { type Metadata } from 'next';
 
 export default async function Page() {
-  const page = pageSource.get(['records']);
+  const page = aboutSource.getPage([]);
 
   if (!page) notFound();
 
@@ -28,7 +28,7 @@ export default async function Page() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const page = pageSource.get(['records']);
+  const page = aboutSource.getPage([]);
 
   if (!page) notFound();
 
