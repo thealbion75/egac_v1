@@ -1,14 +1,12 @@
 import {
   defineConfig,
   defineDocs,
-  defineDoc,
   frontmatterSchema,
   metaSchema,
 } from 'fumadocs-mdx/config';
 import { z } from 'zod';
 
-// You can customise Zod schemas for frontmatter and `meta.json` here
-// see https://fumadocs.dev/docs/mdx/collections#define-docs
+// Define the news collection
 export const news = defineDocs({
   dir: 'content/news',
   docs: {
@@ -22,12 +20,15 @@ export const news = defineDocs({
   },
 });
 
-export const pages = defineDoc({
+// Define the pages collection
+export const pages = defineDocs({
   dir: 'content',
 });
 
+// Export the MDX configuration
 export default defineConfig({
   mdxOptions: {
-    // MDX options
+    remarkPlugins: [],
+    rehypePlugins: [],
   },
 });
